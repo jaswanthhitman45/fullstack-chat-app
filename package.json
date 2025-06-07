@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
 "scripts": {
-  "build": "npm install --prefix backend && npm install --prefix frontend/vite-project && npm run build --prefix frontend/vite-project",
-  "start": "npm run start --prefix backend"
+  "build": "npm install --prefix Backend && npm install --prefix Frontend/vite-project && npm run build --prefix Frontend/vite-project",
+  "start": "npm run start --prefix Backend"
 }
 ,
   "keywords": [],
