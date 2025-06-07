@@ -22,7 +22,7 @@ app.use(cors({
 app.use("/api/auth", authRoutes)
 app.use("/api/messages", messageRoutes)
 
-if (proccess.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "../frontend/vite-project/dist")));
     app.get("*", (req, res) => {
         res.sendFile(path.join(__dirname, "../frontend/vite-project/dist/index.html"));
